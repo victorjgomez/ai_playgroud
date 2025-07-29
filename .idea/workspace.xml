@@ -5,30 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aec9a35a-9cdb-4982-bbed-46be19c51175" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ai_playground.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/embeddings/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/embeddings/embedding_simple_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/embeddings/vector_databases_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hugging_face_models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hugging_face_models/hugging_face_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/penalties/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/penalties/penalties.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag/rag_chunking.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag/rag_chunking_with_metadata.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag/rag_example_local.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag/rag_example_openai.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag/rag_hierarchical_retrieval.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag/rag_topic_segmentation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stop_sequences/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stop_sequences/stop_sequences.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/replicate_api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/replicate_api/replicate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/replicate_api/replicate_image_example.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/adversarial_testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/testing_prompt_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,27 +38,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.embedding_simple_example.executor&quot;: &quot;Run&quot;,
-    &quot;Python.hugging_face_models.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rag_chunking.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rag_example_local.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rag_hierarchical_retrieval.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rag_topic_segmentation.executor&quot;: &quot;Run&quot;,
-    &quot;Python.vector_databases_example.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.adversarial_testing.executor": "Run",
+    "Python.embedding_simple_example.executor": "Run",
+    "Python.hugging_face_models.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.rag_chunking.executor": "Run",
+    "Python.rag_example_local.executor": "Run",
+    "Python.rag_hierarchical_retrieval.executor": "Run",
+    "Python.rag_topic_segmentation.executor": "Run",
+    "Python.replicate.executor": "Run",
+    "Python.replicate_image_example.executor": "Run",
+    "Python.vector_databases_example.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Victor\Documents\companies\applaudo\projects\ai\ai_playground" />
       <recent name="C:\Users\Victor\Documents\companies\applaudo\projects\ai\ai_playground\hugging_face_models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.hugging_face_models">
+  <component name="RunManager" selected="Python.adversarial_testing">
+    <configuration name="adversarial_testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ai_playground" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testing/adversarial_testing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="hugging_face_models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ai_playground" />
       <option name="ENV_FILES" value="" />
@@ -89,50 +100,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hugging_face_models/hugging_face_models.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ai_playground" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="rag_chunking" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ai_playground" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rag" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rag/rag_chunking.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,7 +130,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="rag_topic_segmentation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="replicate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ai_playground" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -172,11 +139,33 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rag" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/replicate_api" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rag/rag_topic_segmentation.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_api/replicate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="replicate_image_example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ai_playground" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/replicate_api" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_api/replicate_image_example.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -187,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.adversarial_testing" />
+        <item itemvalue="Python.replicate_image_example" />
+        <item itemvalue="Python.replicate" />
         <item itemvalue="Python.hugging_face_models" />
         <item itemvalue="Python.rag_hierarchical_retrieval" />
-        <item itemvalue="Python.rag_topic_segmentation" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.rag_chunking" />
       </list>
     </recent_temporary>
   </component>
