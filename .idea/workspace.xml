@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aec9a35a-9cdb-4982-bbed-46be19c51175" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replicate_api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replicate_api/replicate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replicate_api/replicate_image_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/adversarial_testing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing/testing_prompt_example.py" afterDir="false" />
+    <list default="true" id="aec9a35a-9cdb-4982-bbed-46be19c51175" name="Changes" comment="Update ai_playground with new examples">
+      <change afterPath="$PROJECT_DIR$/hugging_face_models/speecht5_tts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hugging_face_models/test_bart_large_cnn_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hugging_face_models/test_stable_diffusion_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,32 +34,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.adversarial_testing.executor": "Run",
-    "Python.embedding_simple_example.executor": "Run",
-    "Python.hugging_face_models.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.rag_chunking.executor": "Run",
-    "Python.rag_example_local.executor": "Run",
-    "Python.rag_hierarchical_retrieval.executor": "Run",
-    "Python.rag_topic_segmentation.executor": "Run",
-    "Python.replicate.executor": "Run",
-    "Python.replicate_image_example.executor": "Run",
-    "Python.vector_databases_example.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.adversarial_testing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.embedding_simple_example.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hugging_face_models.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rag_chunking.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rag_example_local.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rag_hierarchical_retrieval.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rag_topic_segmentation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.replicate.executor&quot;: &quot;Run&quot;,
+    &quot;Python.replicate_image_example.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_stable_diffusion_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vector_databases_example.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Victor\Documents\companies\applaudo\projects\ai\ai_playground" />
       <recent name="C:\Users\Victor\Documents\companies\applaudo\projects\ai\ai_playground\hugging_face_models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.adversarial_testing">
+  <component name="RunManager" selected="Python.test_stable_diffusion_model">
     <configuration name="adversarial_testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ai_playground" />
       <option name="ENV_FILES" value="" />
@@ -100,28 +97,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hugging_face_models/hugging_face_models.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="rag_hierarchical_retrieval" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ai_playground" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rag" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rag/rag_hierarchical_retrieval.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -174,13 +149,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_stable_diffusion_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ai_playground" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hugging_face_models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hugging_face_models/test_stable_diffusion_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_stable_diffusion_model" />
         <item itemvalue="Python.adversarial_testing" />
         <item itemvalue="Python.replicate_image_example" />
         <item itemvalue="Python.replicate" />
         <item itemvalue="Python.hugging_face_models" />
-        <item itemvalue="Python.rag_hierarchical_retrieval" />
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +197,15 @@
       <option name="presentableId" value="Default" />
       <updated>1752600949429</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update ai_playground with new examples">
+      <option name="closed" value="true" />
+      <created>1753829985567</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1753829985567</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,10 +213,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update ai_playground with new examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update ai_playground with new examples" />
   </component>
 </project>
