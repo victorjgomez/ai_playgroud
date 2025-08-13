@@ -24,15 +24,15 @@ prompt = "List some animals you might find in a forest:"
 ollama_request = OllamaRequest()
 
 # No penalties
-response_none = ollama_request.request(prompt=prompt, repeat_penalty=0.0,
+response_none = ollama_request.request(query=prompt, repeat_penalty=0.0,
                                        presence_penalty=0.0)
 
 # With frequency_penalty
-response_freq = ollama_request.request(prompt=prompt, repeat_penalty=1.0,
+response_freq = ollama_request.request(query=prompt, repeat_penalty=1.0,
                                        presence_penalty=0.0)
 
 # With presence_penalty
-response_pres = ollama_request.request(prompt=prompt, repeat_penalty=0.0,
+response_pres = ollama_request.request(query=prompt, repeat_penalty=0.0,
                                        presence_penalty=1.0)
 
 print("== No Penalty ==")

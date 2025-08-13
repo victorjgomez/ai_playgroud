@@ -7,6 +7,8 @@ import time
 
 import openai
 
+from ollama.ollama_request_class import OllamaRequest
+
 
 class TestType(Enum):
     FUNCTIONALITY = "functionality"
@@ -39,11 +41,9 @@ class TestResult:
 
 def my_llm_api(prompt: str) -> str:
     # Your API call here (OpenAI, Anthropic, etc.)
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[{"role": "user", "content": prompt}]
-    )
-    return response.choices[0].message.content
+    ollama_request = OllamaRequest()
+
+    return ollama_request.request(query=prompt)
 
 
 class LLMPromptTester:
@@ -352,3 +352,6 @@ Guidelines:
 if __name__ == "__main__":
     # Run the example
     test_results, test_report = test_my_prompt()
+
+    print("**************TEST REPORT***************")
+    print(test_results)

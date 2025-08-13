@@ -5,10 +5,30 @@ import numpy as np
 # Step 1: Sample topic-segmented chunks
 topic_chunks = [
     {"topic": "Artificial Intelligence", "text": "Artificial Intelligence (AI) is transforming industries."},
+    {"topic": "Artificial Intelligence", "text": "AI enables machines to perform tasks that typically require human intelligence."},
+    {"topic": "Artificial Intelligence", "text": "It is widely used in applications such as image recognition, speech processing, and decision-making."},
+    {"topic": "Artificial Intelligence", "text": "AI systems can analyze vast amounts of data to uncover patterns and insights."},
+    {"topic": "Artificial Intelligence", "text": "The development of AI raises ethical concerns, including bias and job displacement."},
     {"topic": "Finance", "text": "In finance, AI is used to predict market trends and automate trading."},
+    {"topic": "Finance", "text": "AI-powered algorithms can analyze historical data to make investment decisions."},
+    {"topic": "Finance", "text": "Fraud detection systems leverage AI to identify suspicious transactions."},
+    {"topic": "Finance", "text": "AI is also used in credit scoring to assess the creditworthiness of individuals."},
+    {"topic": "Finance", "text": "Robo-advisors provide personalized financial advice using AI models."},
     {"topic": "Healthcare", "text": "AI helps diagnose diseases and recommend treatments in healthcare."},
+    {"topic": "Healthcare", "text": "Medical imaging systems use AI to detect abnormalities in X-rays and MRIs."},
+    {"topic": "Healthcare", "text": "AI-powered chatbots assist patients by answering health-related questions."},
+    {"topic": "Healthcare", "text": "Predictive analytics in AI helps identify patients at risk of developing chronic conditions."},
+    {"topic": "Healthcare", "text": "AI is also used in drug discovery to accelerate the development of new medications."},
     {"topic": "Machine Learning", "text": "Machine learning allows systems to learn from data without programming."},
-    {"topic": "Natural Language Processing", "text": "NLP is used in chatbots and virtual assistants."}
+    {"topic": "Machine Learning", "text": "It is a subset of AI that focuses on building models that improve over time."},
+    {"topic": "Machine Learning", "text": "Supervised learning involves training models on labeled datasets."},
+    {"topic": "Machine Learning", "text": "Unsupervised learning is used to find hidden patterns in unlabeled data."},
+    {"topic": "Machine Learning", "text": "Reinforcement learning trains models through trial and error to maximize rewards."},
+    {"topic": "Natural Language Processing", "text": "NLP is used in chatbots and virtual assistants."},
+    {"topic": "Natural Language Processing", "text": "It enables machines to understand and generate human language."},
+    {"topic": "Natural Language Processing", "text": "Applications of NLP include sentiment analysis, machine translation, and text summarization."},
+    {"topic": "Natural Language Processing", "text": "Speech-to-text systems rely on NLP to convert spoken words into written text."},
+    {"topic": "Natural Language Processing", "text": "NLP is also used in search engines to improve the relevance of search results."}
 ]
 
 # Step 2: Prepare model and embed topics and chunks
@@ -20,6 +40,7 @@ topic_embeddings = model.encode(unique_topics)
 
 # Embed all chunks
 chunk_embeddings = model.encode([chunk["text"] for chunk in topic_chunks])
+
 
 # Step 3: Hierarchical retrieval function
 def hierarchical_rag(query, top_k=1):
@@ -47,12 +68,13 @@ def hierarchical_rag(query, top_k=1):
 
     return selected_topic, ranked[:top_k]
 
+
 # Step 4: Test
-query = "How do computers learn from experience?"
-topic, results = hierarchical_rag(query, top_k=2)
+query = "How do computers/machines learn from experience?"
+topic, results = hierarchical_rag(query, top_k=3)
 
 print(f"\n🔍 Query: {query}")
 print(f"🎯 Matched Topic: {topic}")
 print("📄 Top Relevant Chunk(s):")
 for i, (score, text) in enumerate(results):
-    print(f"{i+1}. Score: {score:.4f} | Text: {text}")
+    print(f"{i + 1}. Score: {score:.4f} | Text: {text}")

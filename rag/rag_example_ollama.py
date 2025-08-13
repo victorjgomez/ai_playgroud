@@ -3,8 +3,7 @@ from sentence_transformers import SentenceTransformer
 import faiss
 import numpy as np
 
-# Set your OpenAI API key
-openai.api_key = "your-api-key"
+from ollama.ollama_request_class import OllamaRequest
 
 # Step 1: Your knowledge base
 documents = [
@@ -22,6 +21,8 @@ doc_embeddings = model.encode(documents)
 index = faiss.IndexFlatL2(doc_embeddings.shape[1])
 index.add(np.array(doc_embeddings))
 
+ollama_request = OllamaRequest()
+
 # Step 4: RAG function
 def rag_query(query, top_k=2):
     query_embedding = model.encode([query])
@@ -30,14 +31,11 @@ def rag_query(query, top_k=2):
     # Retrieve top-k context
     context = "\n".join([documents[i] for i in indices[0]])
 
-    # Generate answer using OpenAI
-    prompt = f"Context:\n{context}\n\nQuestion: {query}\nAnswer:"
-    response = openai.Completion.create(
-        model="text-davinci-003",
-        prompt=prompt,
-        max_tokens=100
-    )
-    return response['choices'][0]['text'].strip()
+    print(f"context: {context}")
+
+    response = ollama_request.request(query=query, context=context)
+
+    return response
 
 # Step 5: Test the RAG system
 query = "Where is the Eiffel Tower?"

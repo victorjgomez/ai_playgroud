@@ -1,12 +1,14 @@
-import openai
+from ollama.ollama_request_class import OllamaRequest
 
-openai.api_key = "your-api-key"
+ollama_request = OllamaRequest()
 
-response = openai.Completion.create(
-    model="text-davinci-003",
-    prompt="AI: Hello, how can I help you today?\nHuman:",
-    max_tokens=100,
-    stop=["\n", "Human:"]
-)
+response_not_stop = ollama_request.request(query="What do you know about Dominican Republic?")
 
-print(response.choices[0].text.strip())
+print("------- Without Stop ----------")
+print(response_not_stop)
+
+print("------- With Stop ----------")
+stop=["\n", "Tourism"]
+response = ollama_request.request(query="What do you know about Dominican Republic?", stop=stop)
+
+print(response)
