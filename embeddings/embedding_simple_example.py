@@ -21,6 +21,6 @@ base_vector = embeddings[0]  # Vector of "I love cats."
 print("Base sentence:", sentences[0])
 print("\nSimilarity with other sentences:")
 
-for i in range(1, len(sentences)):
+for i in range(0, len(sentences)):
     similarity = cosine_similarity([base_vector], [embeddings[i]])[0][0]
     print(f"- {sentences[i]} → Similarity: {similarity:.4f}")
